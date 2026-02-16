@@ -32,8 +32,10 @@ function Home({ isVideoModalOpen, setIsVideoModalOpen }) {
         <div className='videoModalWrapper modalWrapper' onClick={() => setIsVideoModalOpen(false)}>
           <div className='videoModalContent modalContent' onClick={e => e.stopPropagation()}>
             <button className='closeModal' onClick={() => setIsVideoModalOpen(false)} aria-label="Close Facebook Video Modal">❌</button>
-              <iframe src="https://listings.vibrantmediaco.com/videos/01964990-0342-7288-b25a-194d47d7fbe0" width="100%" height="100%" frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style={{border: 'none'}}></iframe>
+              <iframe src="https://listings.vibrantmediaco.com/videos/01964990-0342-7288-b25a-194d47d7fbe0" title='Front Street Townhome walkthrough video' 
+                width="100%" height="100%" frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style={{border: 'none'}}>
+              </iframe>
             </div>
         </div>
       )}
