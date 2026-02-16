@@ -77,6 +77,7 @@ function ImageCarousel({ pics }) {
     infinite: true,
     swipe: true,
     dots: false,
+    adaptiveHeight: true,
     beforeChange: (oldIndex, newIndex) => setCurrentIndex(newIndex),
     afterChange: (currentIndex) => {
       setShowInfo(false);
@@ -154,6 +155,7 @@ function ImageCarousel({ pics }) {
               <img
                 src={pic.original}
                 alt={`Slide ${idx}`}
+                className={pic.originalClass}
                 style={{ width: "100%", height: "auto", cursor: "pointer", padding: "0px"}}
                 onClick={() => setLightboxOpen(true)}
               />

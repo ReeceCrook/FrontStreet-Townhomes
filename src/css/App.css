@@ -27,6 +27,16 @@ body {
   border: gray;
   border-radius: 15px;
   box-shadow: 15px 15px 5px gray;
+  z-index: 0;
+}
+
+.homeImageGalleryWrapper .thumb-slider-wrapper {
+  width: 99%;
+  margin: auto;
+}
+
+.main-img-wrapper {
+  height: 90%;
 }
 
 .homeTabs {
@@ -115,7 +125,7 @@ figcaption {
   background: #fff;
   padding: 1rem;
   border-radius: 4px;
-  position: relative;
+  position: absolute;
 }
 
 .closeModal {
@@ -128,8 +138,16 @@ figcaption {
   cursor: pointer;
 }
 
+.videoModalContent {
+  width: min(96vw, 1100px);
+  aspect-ratio: 16 / 9;
+  max-height: 85vh;
+  margin: 0 auto;
+  background-color: black;
+}
+
 .platMapImg {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -149,7 +167,7 @@ figcaption {
   left: 20px;
   width: 220px;
   height: 220px;
-  border: 5px solid #08966e;
+  border: 5px solid #9cc0c5;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -163,7 +181,7 @@ figcaption {
 }
 
 .mobile-circle {
-  border: 2px solid #00B353;
+  border: 2px solid #9cc0c5;
   background-color: rgba(0, 179, 83, 0.1);
   margin-top: 84%;
   height: 100px;

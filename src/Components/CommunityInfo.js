@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import finalCovs from '../assets/hoaDocs/FinalCovenants.pdf'
+import finalCovs from '../assets/hoaDocs/FrontStreetFinalCovs.pdf'
 import byLaws from '../assets/hoaDocs/Bylaws.pdf'
-import platMap from '../assets/mainPics/CleanPalomino.Plat.jpg'
+import platMap from '../assets/mainPics/FrontStreetPlatMap.png'
 
 function CommunityInfo() {
   const [isPlatModalOpen, setIsPlatModalOpen] = useState(false)

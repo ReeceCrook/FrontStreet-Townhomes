@@ -11,8 +11,8 @@ function Directions() {
   };
 
   const center = {
-    lat: 38.90897932355048,
-    lng: -104.71423023899487
+    lat: 39.09225312264767,
+    lng: -104.87473018436863
   };
   return (
     <div className='directionsWrapper'>
@@ -26,20 +26,16 @@ function Directions() {
         <MarkerF position={center} />
       </GoogleMap>
       <a
-        href='https://maps.app.goo.gl/kZGZBtfFjVg5rDvc7'
+        href='https://maps.app.goo.gl/mSxxnJv4vmKMaUaU8'
         target='_blank'
         rel="noopener noreferrer"
         className='mapDirectionsATag'
-        aria-label="Open Google Maps for Palomino Townhomes"
+        aria-label="Open Google Maps for Front Street Townhomes"
       >
-        Palomino Townhomes<br />
-        5113 Palomino Ranch Point<br />
-        Colorado Springs, Co. 80922
+        Front Street Townhomes<br />
+        241 Front St, Monument, CO 80132<br />
+        Colorado Springs, Monument, CO 80132
       </a>
-      <div className='info-box'>
-        <span className="info-icon">⚠️</span>
-        <span className="info-message">Enter off of Tutt Blvd.</span>
-      </div>
     </div>
   )
 }

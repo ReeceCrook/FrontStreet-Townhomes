@@ -1,20 +1,29 @@
 .floorPlanWrapper {
-  --bg-color: #bd915b;
+  --bg-color: #9cc0c5;
   --card-bg-color: #ffffff;
   --border-color: #333333;
   --text-padding: 15px;
   --border-radius: 25px;
-  --card-width: 33.33%;
+  --card-width: 45%;
   --gap-size: 20px;
 }
 
+.floorPlanWrapper .main-slider-wrapper {
+  margin-bottom: 12%;
+}
+
+
+.cardImgs {
+  margin: auto;
+  max-width: 80%;
+}
+
 .floorPlansPage {
-  background-color: #bd915b;
+  background-color: #9cc0c5;
   min-height: 100vh;
   padding: 20px;
   box-sizing: border-box;
 }
-
 
 .floorPlanWrapper {
   display: flex;
@@ -26,6 +35,7 @@
   gap: var(--gap-size);
   margin-top: 5%;
   margin-right: 10%;
+  border-radius: 25px;
 }
 
 .floorPlanCard {
@@ -34,7 +44,7 @@
   border-radius: var(--border-radius);
   padding: var(--text-padding);
   flex: 1 1 calc(var(--card-width) - 40px);
-  max-width: calc(var(--card-width) - 40px);
+  max-width: 35%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;

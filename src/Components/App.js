@@ -1,4 +1,4 @@
-import { React, lazy, Suspense } from 'react';
+import { React, lazy, Suspense, useState } from 'react';
 import { Route, Routes } from "react-router-dom";
 import { LoadScriptNext } from '@react-google-maps/api';
 import '../css/App.css';
@@ -12,17 +12,20 @@ import Directions from './Directions.js'
 const CommunityInfo = lazy(() => import('./CommunityInfo.js'));
 const API_KEY = "AIzaSyBb37nQzzMw7_9NBshKx5uOTCj9oe9pxq0";
 
+
 function App() {
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+
   return (
     <div className="App">
       <LoadScriptNext
         googleMapsApiKey={API_KEY}
         loadingElement={<div>Loading map...</div>}
       >
-        <NavBar />
+        <NavBar isVideoModalOpen={isVideoModalOpen} setIsVideoModalOpen={setIsVideoModalOpen} />
         <Suspense fallback={<Loading />}>
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/" element={<Home isVideoModalOpen={isVideoModalOpen} setIsVideoModalOpen={setIsVideoModalOpen} />} />
             {/* <Route exact path='/available-homes' element={<AvailableHomes />} /> */}
             <Route exact path="/floor-plans" element={<FloorPlans />} />
             <Route exact path="/community-info" element={<CommunityInfo />} />

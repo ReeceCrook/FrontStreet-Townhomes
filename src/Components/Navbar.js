@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import homeIcon from '../assets/Icons/home.png';
 // import availableHomeIcom from '../assets/Icons/new-home.png'
@@ -8,7 +8,7 @@ import communityInfoIcon from "../assets/Icons/info.png";
 import contactUsIcon from '../assets/Icons/contact-us.png';
 import facebookLogo from "../assets/Icons/play.png";
 
-function NavBar() {
+function NavBar({ isVideoModalOpen, setIsVideoModalOpen }) {
     const navigate = useNavigate()
     const location = useLocation();
     const home = location.pathname === '/';
@@ -97,21 +97,12 @@ function NavBar() {
                 </figure>
             </NavLink>
 
-            <a
-                href='https://www.facebook.com/reel/370942789140592'
-                target='_blank'
-                rel="noopener noreferrer"
-                className="facebookButtonNav"
-            >
-                <figure className="iconsWrapper facebookNavWrapper">
-                    <button className="iconButtons facebookIcon">
-                        <img src={facebookLogo} alt="Facebook Logo" className="facebookLogoNav" /><br />
-                        <figcaption>Play Video</figcaption>
-                    </button>
-                </figure>
-            </a>
-
-
+            <figure className="iconsWrapper facebookNavWrapper">
+                <button className="iconButtons facebookIcon" onClick={() => setIsVideoModalOpen(true)}>
+                    <img src={facebookLogo} alt="Facebook Logo" className="facebookLogoNav" /><br />
+                    <figcaption>Play Video</figcaption>
+                </button>
+            </figure>
         </div>
     );
 }
