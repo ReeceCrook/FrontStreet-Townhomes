@@ -30,22 +30,6 @@ function NavBar({ isVideoModalOpen, setIsVideoModalOpen }) {
                     </button>
                 </figure>
             </NavLink>
-            {/* <NavLink
-             to="/available-homes"
-             activeclassname="active"
-             exact="true"
-            >
-                <figure className="iconsWrapper">
-                    <button className="iconButtons">
-                        <img src={availableHomeIcom}
-                        alt="New house icons created by Iconic Artisan" 
-                        title="New house icons created by Iconic Artisan" 
-                        onClick={() => navigate('/available-homes')} className="icons"
-                        />
-                        <figcaption>Available Homes</figcaption>
-                    </button>
-                </figure>
-            </NavLink> */}
             <NavLink
                 to="/floor-plans"
                 exact="true"

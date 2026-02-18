@@ -4,7 +4,7 @@ import ImageCarousel from './ImageCarousel'
 import { homeImages } from '../images'
 
 
-function Home({ isVideoModalOpen, setIsVideoModalOpen }) {
+function Home() {
   const [isMobile, setIsMobile] = useState(false);
   
 
@@ -28,17 +28,6 @@ function Home({ isVideoModalOpen, setIsVideoModalOpen }) {
 
   return (
     <div className='homeDiv'>
-      {isVideoModalOpen && (
-        <div className='videoModalWrapper modalWrapper' onClick={() => setIsVideoModalOpen(false)}>
-          <div className='videoModalContent modalContent' onClick={e => e.stopPropagation()}>
-            <button className='closeModal' onClick={() => setIsVideoModalOpen(false)} aria-label="Close Facebook Video Modal">❌</button>
-              <iframe src="https://listings.vibrantmediaco.com/videos/01964990-0342-7288-b25a-194d47d7fbe0" title='Front Street Townhome walkthrough video' 
-                width="100%" height="100%" frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style={{border: 'none'}}>
-              </iframe>
-            </div>
-        </div>
-      )}
       <img src={Logo} alt='palomino ranch townhomes logo' className='palominoLogo' />
       <div className='homeImageGalleryWrapper'>
         <ImageCarousel pics={homeImages} />

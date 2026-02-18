@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import finalCovs from '../assets/hoaDocs/FrontStreetFinalCovs.pdf'
-import byLaws from '../assets/hoaDocs/Bylaws.pdf'
 import platMap from '../assets/mainPics/FrontStreetPlatMap.png'
 
 function CommunityInfo() {
@@ -25,14 +24,6 @@ function CommunityInfo() {
               Conditions and Restrictions
             </h2>
             <a href={finalCovs} target="_blank" rel="noopener noreferrer">View PDF</a>
-          </div>
-          <div className='byLaws'>
-            <h2>
-              ByLaws<br />
-              of Palomino Ranch Patio Homes<br />
-              Homeowners Association, Inc..
-            </h2>
-            <a href={byLaws} target="_blank" rel="noopener noreferrer">View PDF</a>
           </div>
         </div>
       </div>

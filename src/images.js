@@ -17,8 +17,8 @@ import card1img1 from './assets/FloorPlans/card1/Unit 101 Floorplan.jpg'
 import card1img2 from './assets/FloorPlans/card1/Unit 101 Main Level.jpg'
 // import card1img3 from './assets/FloorPlans/card1/Model 1551L- Basement.jpg'
 
-import card2img1 from './assets/FloorPlans/card2/3bd_3ba Front Street Main Level.jpg'
-import card2img2 from './assets/FloorPlans/card2/3bd_3ba Front Street Upper Level.jpg'
+import card2img1 from './assets/FloorPlans/card2/3bd_3ba Front Street Upper Level.jpg'
+import card2img2 from './assets/FloorPlans/card2/3bd_3ba Front Street Main Level.jpg'
 // import card2img3 from './assets/FloorPlans/card2/237-Front-St-Arch-Rev2-images-2.jpg'
 
 import card3img1 from './assets/FloorPlans/card3/Model 1558-main.jpg'

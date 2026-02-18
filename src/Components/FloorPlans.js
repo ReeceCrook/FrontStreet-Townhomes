@@ -8,7 +8,7 @@ function FloorPlans() {
       <div className="floorPlanWrapper">
         <article className="floorPlanCard FPCard1">
           <div className="cardText">
-            <h2>3 Bedroom 2 Bath</h2>
+            <h2>2 Bedroom, 1 Bath, 2 Car Garage</h2>
           </div>
           {/* <hr className="divider" /> */}
           <ImageCarousel pics={floorPlanImages[0]} showFullscreenButton={true} />
@@ -16,7 +16,7 @@ function FloorPlans() {
 
         <article className="floorPlanCard FPCard2">
           <div className="cardText">
-            <h2>2 Bedroom 1 Bath</h2>
+            <h2>3 Bedroom, 3 Bath, 2 Car Garage</h2>
           </div>
           {/* <hr className="divider" /> */}
           <ImageCarousel pics={floorPlanImages[1]} showFullscreenButton={true} />
