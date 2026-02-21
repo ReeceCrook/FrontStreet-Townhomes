@@ -154,11 +154,11 @@ figcaption {
 }
 
 .backroundImgDiv {
-  background-image: url(../assets/mainPics/communityInfoBackground.png);
+  background-image: url(../assets/mainPics/CommunityInfoBackground.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding-bottom: 25%;
+  padding-bottom: 20%;
 }
 
 .circle {

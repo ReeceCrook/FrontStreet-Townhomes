@@ -53,95 +53,35 @@ function Contact() {
         <a href='mailto:jim@masterbilt.com'>jim@masterbilt.com</a>
       </div>
       <img src={mbLogo} alt='Masterbilt-Logo' className='mbLogo' />
-      <div className='contactUsContainer'>
-        <div className="contactUsText">
-          Contact Us
-        </div>
-        <div>
-          <form onSubmit={formik.handleSubmit}>
-            <div className='formRow'>
-              <div className='inputData'>
-                <label htmlFor="userFirstName">
-                  {formik.errors.userFirstName ? (
-                    <>First Name: <i>{formik.errors.userFirstName}</i></>
-                  ) : "First Name:"}
-                </label>
-                <input
-                  type='text'
-                  id='userFirstName'
-                  name='userFirstName'
-                  value={formik.values.userFirstName}
-                  onChange={formik.handleChange}
-                  required
-                /><br />
-              </div>
-              <div className='inputData'>
-                <label htmlFor="userLastName">
-                  {formik.errors.userLastName ? (
-                    <>Last Name: <i>{formik.errors.userLastName}</i></>
-                  ) : "Last Name:"}
-                </label>
-                <input
-                  type='text'
-                  id='userLastName'
-                  name='userLastName'
-                  value={formik.values.userLastName}
-                  onChange={formik.handleChange}
-                  required
-                /><br />
-              </div>
-            </div>
-            <div className='formRow'>
-              <div className='inputData'>
-                <label htmlFor="userEmail">
-                  {formik.errors.userEmail ? (
-                    <>Email: <i>{formik.errors.userEmail}</i></>
-                  ) : "Email:"}
-                </label>
-                <input
-                  type='text'
-                  id='userEmail'
-                  name='userEmail'
-                  value={formik.values.userEmail}
-                  onChange={formik.handleChange}
-                  required
-                /><br />
-              </div>
-              <div className='inputData'>
-                <label htmlFor="userPhoneNum">
-                  {formik.errors.userPhoneNum ? (
-                    <>Phone#: <i>{formik.errors.userPhoneNum}</i></>
-                  ) : "Phone#:"}
-                </label>
-                <input
-                  type='text'
-                  id='userPhoneNum'
-                  name='userPhoneNum'
-                  value={formik.values.userPhoneNum}
-                  onChange={formik.handleChange}
-                /><br />
-              </div>
-            </div>
-            <div className="form-row">
-              <div className="input-data textarea">
-                <label htmlFor="userMessage">
-                  {formik.errors.userMessage ? (
-                    <>Write your message: <i>{formik.errors.userMessage}</i></>
-                  ) : "Write your message:"}</label><br />
-                <textarea
-                  id='userMessage'
-                  rows="8" cols="80"
-                  name="userMessage"
-                  value={formik.values.userMessage}
-                  onChange={formik.handleChange}
-                  required
-                /><br />
-                <input className='submitBtn' type="submit" />
-              </div>
-            </div>
-          </form>
-        </div>
+      <div className="about-us">
+        <h2 className="about-us-title">Modern Townhome Living in the Heart of Monument</h2>
 
+        <div className="about-us-card">
+          <p>
+            Discover a unique opportunity nestled in the charming town of Monument. These beautifully designed townhomes offer a perfect blend of comfort, style, and
+            functionality — ideal for homeowners and investors alike.
+          </p>
+
+          <p>
+            Each residence features a smart, spacious layout with an attached two-car garage on the main level and an expansive living area above. Inside, vaulted ceilings create
+            an airy, open atmosphere complemented by abundant natural light pouring through large windows. Upscale finishes, including granite countertops in the kitchen and bathrooms,
+            elevate the space with modern elegance.
+          </p>
+
+          <p>
+            Located in a peaceful neighborhood, these townhomes offer convenient access to Limbach Park, Monument Lake, local restaurants, and boutique shops — all while maintaining
+            quick connectivity to I-25. Enjoy the best of Colorado living with Denver and Colorado Springs just a short drive away.
+          </p>
+
+          <p>
+            At MasterBilt Homes, Inc., we are proud to be a locally owned and operated builder serving El Paso County since 1991. Having constructed nearly 1,000 homes, we stand behind
+            every residence we build with a steadfast commitment to quality craftsmanship, professionalism, and integrity you can trust.
+          </p>
+
+          <p className="about-us-emphasis">
+            Don’t miss this exceptional opportunity to own a stylish, versatile home in one of Colorado’s most desirable communities.
+          </p>
+        </div>
       </div>
       <div className='socialsDiv'>
         <a

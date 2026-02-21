@@ -1,5 +1,5 @@
 
-import img1 from './assets/HomePagePics/StartingInTheLow.png'
+import img1 from './assets/HomePagePics/Prices.jpg'
 import img2 from './assets/HomePagePics/Main.jpeg'
 import img3 from './assets/HomePagePics/Main2.jpeg'
 import img4 from './assets/HomePagePics/Kitchen.jpeg'
@@ -10,7 +10,7 @@ import img8 from './assets/HomePagePics/Garage.jpeg'
 import img9 from './assets/HomePagePics/Outer.jpeg'
 import img10 from './assets/HomePagePics/OuterBack.jpeg'
 import img11 from './assets/HomePagePics/OuterBack2.jpeg'
-import buyerIncentive from './assets/HomePagePics/firstTimeHomebuyer.png'
+// import buyerIncentive from './assets/HomePagePics/firstTimeHomebuyer.png'
 
 
 import card1img1 from './assets/FloorPlans/card1/Unit 101 Floorplan.jpg'
@@ -32,12 +32,12 @@ const homeImages = [
         "thumbnail": img1,
         'originalClass': 'homeImgs',
     },
-    {
-        'id': 4,
-        'original': buyerIncentive,
-        "thumbnail": buyerIncentive,
-        'originalClass': 'homeImgs'
-    },
+    // {
+    //     'id': 4,
+    //     'original': buyerIncentive,
+    //     "thumbnail": buyerIncentive,
+    //     'originalClass': 'homeImgs'
+    // },
     {
         'id': 3,
         'original': img2,
