@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Logo from '../assets/mainPics/FrontStTownhomesLogo.png'
+import Logo from '../assets/mainPics/FrontStTownhomesLogoCropped.png'
 import ImageCarousel from './ImageCarousel'
 import { homeImages } from '../images'
 

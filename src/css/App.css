@@ -19,6 +19,7 @@ body {
 .palominoLogo {
   width: 68%;
   height: auto;
+  margin-bottom: 2%;
 }
 
 .homeImageGalleryWrapper {
@@ -37,6 +38,11 @@ body {
 
 .main-img-wrapper {
   height: 90%;
+}
+
+.tabs {
+  border: #333 solid 2px;
+  border-radius: 16px;
 }
 
 .homeTabs {
@@ -68,6 +74,7 @@ body {
 
 .iconsWrapper figcaption {
   text-decoration: none;
+
 }
 
 .iconButtons {
@@ -80,6 +87,7 @@ body {
   width: 30px;
   cursor: pointer;
 }
+
 
 figcaption {
   transition: opacity 0.3s ease-in-out;
@@ -167,12 +175,12 @@ figcaption {
   left: 20px;
   width: 220px;
   height: 220px;
-  border: 5px solid #9cc0c5;
+  border: 8px solid #9cc0c5;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: rgba(156, 192, 197, 0.2);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding: 12px;

@@ -5,7 +5,7 @@ import homeIcon from '../assets/Icons/home.png';
 import floorPlansIcon from '../assets/Icons/blueprint.png'
 import directionsIcon from "../assets/Icons/direction.png";
 import communityInfoIcon from "../assets/Icons/info.png";
-import contactUsIcon from '../assets/Icons/contact-us.png';
+import contactUsIcon from '../assets/Icons/About-Us.png';
 import facebookLogo from "../assets/Icons/play.png";
 
 function NavBar({ isVideoModalOpen, setIsVideoModalOpen }) {
@@ -76,7 +76,7 @@ function NavBar({ isVideoModalOpen, setIsVideoModalOpen }) {
                 <figure className="iconsWrapper">
                     <button className="iconButtons">
                         <img src={contactUsIcon} alt="Masterbilt Contact Us icon" onClick={() => navigate('/contact-us')} className="icons" />
-                        <figcaption>Contact Us</figcaption>
+                        <figcaption>About Us</figcaption>
                     </button>
                 </figure>
             </NavLink>

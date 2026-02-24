@@ -1,7 +1,6 @@
 .about-us {
   max-width: 960px;
   margin: 0 auto;
-  padding: 4%;
 }
 
 .about-us-title {
@@ -16,7 +15,6 @@
   border-radius: 16px;
   padding: 4%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-
   display: grid;
   gap: 14px;
 }
@@ -64,17 +62,23 @@
   text-decoration: underline;
 }
 
+.socialsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+}
+
 .facebookButton {
-  position: absolute;
-  margin-top: 25px;
   display: inline-flex;
   align-items: center;
-  padding: 10px;
+  gap: 10px;
+  padding: 10px 12px;
   background-color: #1877f2;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  left: 30%;
 }
 
 .facebookButton:hover {
@@ -83,23 +87,20 @@
 
 .facebookLogo {
   width: 20px;
-  margin-right: 10px;
-}
-
-.socialsDiv {
-  position: relative;
 }
 
 .bbbRating {
-  position: absolute;
-  margin-top: 10px;
   display: inline-flex;
   align-items: center;
   padding: 10px;
-  color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  right: 20%;
+}
+
+.bbbRating img {
+  height: 60px;
+  width: auto;
+  display: block;
 }
 
 .mbLogo {
@@ -116,13 +117,9 @@
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1800px) {
-  .mbLogo {
-    margin-left: 12%;
-  }
-
   .businessCard {
-    width: 14%;
-    top: 35%;
+    width: 18%;
+    top: 28%;
     left: 1%;
   }
 }
@@ -133,61 +130,42 @@
   }
 
   .businessCard {
-    position: relative;
-    width: 60%;
-    margin-top: 5px;
-    left: 10%;
+    position: static; 
+    width: 80%;
+  }
+
+  .about-us {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .contactUsWrapper {
-    display: flex;
-    margin-right: 30%;
-    flex-direction: column;
-  }
-
-  .formRow {
-    flex-direction: column;
-  }
-
-  .inputData {
-    margin-bottom: 10px;
-    padding: 20px 0 20px 0;
-
-  }
-
-  .input-data.textarea {
-    width: 100%;
-  }
-
-  .submitBtn {
-    width: 100%;
+    display: block;
+    width: 80%;
+    margin: 0 auto 0 0;
+    padding-left: 1%;
+    padding-right: 5%;
+    box-sizing: border-box;
   }
 
   .socialsDiv {
-    position: relative;
-  }
-
-  .bbbRating {
-    width: 5%;
-    float: right;
-    position: absolute;
-    margin-top: 20px;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    right: 28%;
+    flex-direction: column;
+    align-items: stretch;
+    width: 80%;
   }
 
   .facebookButton {
-    margin-top: 35px;
-    width: 55%;
-    position: absolute;
-    background-color: #1877f2;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    left: 0%;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .bbbRating {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .bbbRating img {
+    height: 70px;
   }
 
 

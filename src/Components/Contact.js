@@ -1,60 +1,15 @@
 import React from 'react'
-import { useFormik } from 'formik';
-import * as yup from "yup"
-import emailjs from '@emailjs/browser';
 import "../css/Contact.css"
 import jimPhoto from "../assets/mainPics/jim.jpg"
 import mbLogo from "../assets/mainPics/MB-logo.png"
 import facebookLogo from "../assets/mainPics/Facebook_Logo_Primary.png"
 
 function Contact() {
-  const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
-
-
-  const formSchema = yup.object().shape({
-    userFirstName: yup.string().required("Name is not valid.").max(25),
-    userLastName: yup.string().required("Last name is not valid").max(30),
-    userEmail: yup.string().email().required("Email is not valid"),
-    userPhoneNum: yup.string().matches(phoneRegExp, 'Phone number is not valid'),
-    userMessage: yup.string().required("Message is not valid").max(300)
-  })
-
-  const formik = useFormik({
-    initialValues: {
-      userFirstName: "",
-      userLastName: "",
-      userEmail: "",
-      userPhoneNum: "",
-      userMessage: "",
-    },
-    validationSchema: formSchema,
-    onSubmit: (values) => {
-      const formElement = document.querySelector('form');
-      emailjs
-        .sendForm('service_pda4dyn', 'template_4npi60d', formElement, 'JiyFMUBN4XcgzPCpE')
-        .then((result) => {
-          console.log(result.text);
-          window.alert("Your message was sent successfully")
-          formik.resetForm();
-        })
-        .catch((error) => {
-          console.log(error.text);
-          window.alert("Something went wrong")
-        });
-    },
-  });
-
   return (
     <div className='contactUsWrapper'>
-      <div className='businessCard'>
-        <img src={jimPhoto} alt="Jim's Masterbilt Profile" />
-        <h2>James A. Stiltner</h2>
-        <a href='tel:7199643526'>719-964-3526</a> <br />
-        <a href='mailto:jim@masterbilt.com'>jim@masterbilt.com</a>
-      </div>
       <img src={mbLogo} alt='Masterbilt-Logo' className='mbLogo' />
       <div className="about-us">
-        <h2 className="about-us-title">Modern Townhome Living in the Heart of Monument</h2>
+        <h2 className="about-us-title">Modern Townhome Living in the <br /> Heart of Monument</h2>
 
         <div className="about-us-card">
           <p>
@@ -102,6 +57,12 @@ function Contact() {
             alt="Masterbilt Homes BBB Review" />
         </a>
       </div>
+      <aside className='businessCard'>
+        <img src={jimPhoto} alt="Jim's Masterbilt Profile" />
+        <h2>James A. Stiltner</h2>
+        <a href='tel:7199643526'>719-964-3526</a> <br />
+        <a href='mailto:jim@masterbilt.com'>jim@masterbilt.com</a>
+      </aside>
     </div>
   )
 }
