@@ -11,7 +11,6 @@ import img9 from './assets/HomePagePics/Outer.jpeg'
 import img10 from './assets/HomePagePics/OuterBack.jpeg'
 import img11 from './assets/HomePagePics/OuterBack2.jpeg'
 import img12 from './assets/HomePagePics/Bedroom2.jpg'
-import img13 from './assets/HomePagePics/FrontView.jpg'
 import img14 from './assets/HomePagePics/Kitchen2.jpg'
 import img15 from './assets/HomePagePics/Main3.jpg'
 import img16 from './assets/HomePagePics/Main4.jpg'
@@ -105,12 +104,6 @@ const homeImages = [
         'id': 13,
         'original': img8,
         "thumbnail": img8,
-        'originalClass': 'homeImgs'
-    },
-    {
-        'id': 14,
-        'original': img13,
-        "thumbnail": img13,
         'originalClass': 'homeImgs'
     },
     {

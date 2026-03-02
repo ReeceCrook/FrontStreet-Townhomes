@@ -16,9 +16,8 @@ function Directions() {
   };
   return (
     <div className='directionsPage'>  
+      <h1>Directions</h1>
       <div className='directionsWrapper'>
-        <h1>Directions</h1>
-
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
           center={center}
@@ -34,8 +33,7 @@ function Directions() {
           aria-label="Open Google Maps for Front Street Townhomes"
         >
           Front Street Townhomes<br />
-          241 Front St, Monument, CO 80132<br />
-          Colorado Springs, Monument, CO 80132
+          241 Front St, Monument, CO 80132
         </a>
       </div>
     </div>
