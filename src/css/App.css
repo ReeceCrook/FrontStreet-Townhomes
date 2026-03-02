@@ -189,8 +189,8 @@ figcaption {
 }
 
 .mobile-circle {
-  border: 2px solid #9cc0c5;
-  background-color: rgba(0, 179, 83, 0.1);
+  border: 2px solid #9cc0c5;  
+  background-color: rgba(156, 192, 197, 0.4);
   margin-top: 84%;
   height: 100px;
   width: 300px;
@@ -415,7 +415,6 @@ figcaption {
     align-items: center;
     margin: 0;
     padding: 5px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 9999;
   }
 
@@ -537,5 +536,9 @@ figcaption {
   .platMapImg {
     width: 100%;
     height: auto;
+  }
+
+  .tabs {
+    border: hidden;
   }
 }

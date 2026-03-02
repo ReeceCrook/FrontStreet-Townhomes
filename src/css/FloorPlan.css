@@ -48,7 +48,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   box-sizing: border-box;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -87,8 +87,6 @@
   transform: none !important;
   transition: none !important;
 }
-
-
 
 @media (max-width: 1200px) {
   .floorPlanCard {
@@ -136,5 +134,16 @@
   .floorPlanCard:hover {
     transform: none;
     box-shadow: none;
+  }
+
+  .floorPlansPage .main-slider-wrapper .cardImgs {
+    height: 100%;
+  }
+
+  .pipe {
+    display: block;
+    height: 0;
+    margin: 0;
+    visibility: hidden;
   }
 }
