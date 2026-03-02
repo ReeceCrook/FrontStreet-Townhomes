@@ -29,6 +29,11 @@ body {
   border-radius: 15px;
   box-shadow: 15px 15px 5px gray;
   z-index: 0;
+  margin-left: 70px;
+}
+
+.homeImageGalleryWrapper img {
+  max-height: 760px;
 }
 
 .homeImageGalleryWrapper .thumb-slider-wrapper {
@@ -163,11 +168,11 @@ figcaption {
 }
 
 .backroundImgDiv {
-  background-image: url(../assets/mainPics/CommunityInfoBackground.png);
+  background-image: url(../assets/mainPics/NewCommunityInfoBackground.jpeg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding-bottom: 20%;
+  height: 100vh;
 }
 
 .circle {
@@ -207,7 +212,7 @@ figcaption {
 }
 
 .communityInfoWrapper {
-  margin-top: 4%;
+  margin-top: 200px;
   background-color: white;
   display: inline-block;
   padding: 5px;
@@ -239,7 +244,7 @@ figcaption {
 }
 
 .directionsWrapper {
-  margin-top: 70px;
+  margin-top: 150px;
   display: inline-block;
   width: 70%;
   height: auto;
@@ -399,6 +404,7 @@ figcaption {
 
   .homeImageGalleryWrapper {
     box-shadow: none;
+    margin-left: 0px;
   }
 
   .homeImageGalleryWrapper .thought-bubble {
@@ -480,7 +486,7 @@ figcaption {
   .palominoLogo {
     width: 100%;
     height: auto;
-    margin-top: 15%;
+    margin-top: 25px;
   }
 
   .homeImageGalleryWrapper {
@@ -496,7 +502,6 @@ figcaption {
   .directionsWrapper {
     float: left;
     margin-left: 5%;
-    background-color: white;
   }
 
   .mapDirectionsATag {
@@ -507,6 +512,7 @@ figcaption {
     width: 70%;
     float: left;
     font-size: small;
+    margin-top: 80px;
   }
 
   .communityInfoWrapperInner {

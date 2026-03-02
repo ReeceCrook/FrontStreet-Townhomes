@@ -42,6 +42,8 @@
 .contactUsWrapper {
   display: inline-block;
   width: 50%;
+  margin-left: 100px;
+  margin-top: 80px;
 }
 
 .businessCard {
@@ -50,7 +52,7 @@
   padding: 20px;
   border: 2px solid #ccc;
   text-align: center;
-  top: 23%;
+  top: 12%;
   left: 2%;
   position: absolute;
   background-color: white;
@@ -118,6 +120,10 @@
   position: relative;
 }
 
+.aboutUsMainLogo {
+  display: none;
+}
+
 @media only screen and (min-width: 1950px) {
   .businessCard {
     left: 3%;
@@ -129,7 +135,7 @@
 @media only screen and (min-width: 601px) and (max-width: 1800px) {
   .businessCard {
     width: 18%;
-    top: 28%;
+    top: 20%;
     left: 1%;
   }
 }
@@ -137,6 +143,14 @@
 @media only screen and (max-width: 600px) {
   .mbLogo {
     width: 100%;
+  }
+
+  .aboutUsMainLogo {
+    display: block;
+  }
+
+  .businessCardLogo {
+    display: none;
   }
 
   .businessCard {

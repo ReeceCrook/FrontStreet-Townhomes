@@ -8,7 +8,7 @@ function Contact() {
   return (
     <div className='aboutUsPage'>
       <div className='contactUsWrapper'>
-        <img src={mbLogo} alt='Masterbilt-Logo' className='mbLogo' />
+        <img src={mbLogo} alt='Masterbilt-Logo' className='mbLogo aboutUsMainLogo' />
         <div className="about-us">
           <h2 className="about-us-title">Modern Townhome Living in the <br /> Heart of Monument</h2>
 
@@ -59,6 +59,7 @@ function Contact() {
           </a>
         </div>
         <aside className='businessCard'>
+          <img src={mbLogo} alt='Masterbilt-Logo' className='mbLogo businessCardLogo' />
           <img src={jimPhoto} alt="Jim's Masterbilt Profile" />
           <h2>James A. Stiltner</h2>
           <a href='tel:7199643526'>719-964-3526</a> <br />

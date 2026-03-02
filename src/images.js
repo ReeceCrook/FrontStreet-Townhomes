@@ -16,17 +16,17 @@ import img14 from './assets/HomePagePics/Kitchen2.jpg'
 import img15 from './assets/HomePagePics/Main3.jpg'
 import img16 from './assets/HomePagePics/Main4.jpg'
 import img17 from './assets/HomePagePics/Bathroom2.jpg'
+import img18 from './assets/HomePagePics/Community1.jpeg'
+import img19 from './assets/HomePagePics/Community2.jpeg'
+import img20 from './assets/HomePagePics/Community3.jpeg'
+import img21 from './assets/HomePagePics/Community4.jpeg'
 
 
 import card1img1 from './assets/FloorPlans/card1/Unit 101 Floorplan.jpg'
 import card1img2 from './assets/FloorPlans/card1/Unit 101 Main Level.jpg'
 
-import card2img1 from './assets/FloorPlans/card2/3bd_3ba Front Street Upper Level.jpg'
-import card2img2 from './assets/FloorPlans/card2/3bd_3ba Front Street Main Level.jpg'
-
-import card3img1 from './assets/FloorPlans/card3/Model 1558-main.jpg'
-import card3img2 from './assets/FloorPlans/card3/Model 1558-Upper.jpg'
-import card3img3 from './assets/FloorPlans/card3/Model 1558-Basement.jpg'
+import card2img1 from './assets/FloorPlans/card2/MasterBilt-237 Front St-Upper.png'
+import card2img2 from './assets/FloorPlans/card2/MasterBilt-237 Front St-Main.png'
 
 const homeImages = [
     {
@@ -130,7 +130,32 @@ const homeImages = [
         'original': img11,
         "thumbnail": img11,
         'originalClass': 'homeImgs'
-    }
+    },
+    {
+        'id': 18,
+        'original': img18,
+        "thumbnail": img18,
+        'originalClass': 'homeImgs'
+    },
+    {
+        'id': 19,
+        'original': img19,
+        "thumbnail": img19,
+        'originalClass': 'homeImgs'
+    },
+    {
+        'id': 20,
+        'original': img20,
+        "thumbnail": img20,
+        'originalClass': 'homeImgs'
+    },
+    {
+        'id': 21,
+        'original': img21,
+        "thumbnail": img21,
+        'originalClass': 'homeImgs'
+    },
+
 ]
 
 const floorPlanImages = [
@@ -139,13 +164,11 @@ const floorPlanImages = [
         {
             'original': card1img1,
             "thumbnail": card1img1,
-            'model': 1551,
             'originalClass': 'cardImgs'
         },
         {
             'original': card1img2,
             "thumbnail": card1img2,
-            'model': 1551,
             'originalClass': 'cardImgs'
         }
     ],
@@ -153,35 +176,13 @@ const floorPlanImages = [
         {
             'original': card2img1,
             "thumbnail": card2img1,
-            'model': 1551,
             'originalClass': 'cardImgs'
         },
         {
             'original': card2img2,
             "thumbnail": card2img2,
-            'model': 1551,
             'originalClass': 'cardImgs'
         }
-    ],
-    [
-        {
-            'original': card3img1,
-            "thumbnail": card3img1,
-            'model': 1558,
-            'originalClass': 'cardImgs'
-        },
-        {
-            'original': card3img2,
-            "thumbnail": card3img2,
-            'model': 1558,
-            'originalClass': 'cardImgs'
-        },
-        {
-            'original': card3img3,
-            "thumbnail": card3img3,
-            'model': 1558,
-            'originalClass': 'cardImgs'
-        },
     ]
 ]
 
