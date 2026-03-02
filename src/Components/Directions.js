@@ -15,27 +15,29 @@ function Directions() {
     lng: -104.87473018436863
   };
   return (
-    <div className='directionsWrapper'>
-      <h1>Directions</h1>
+    <div className='directionsPage'>  
+      <div className='directionsWrapper'>
+        <h1>Directions</h1>
 
-      <GoogleMap
-        mapContainerStyle={mapContainerStyle}
-        center={center}
-        zoom={15}
-      >
-        <MarkerF position={center} />
-      </GoogleMap>
-      <a
-        href='https://maps.app.goo.gl/mSxxnJv4vmKMaUaU8'
-        target='_blank'
-        rel="noopener noreferrer"
-        className='mapDirectionsATag'
-        aria-label="Open Google Maps for Front Street Townhomes"
-      >
-        Front Street Townhomes<br />
-        241 Front St, Monument, CO 80132<br />
-        Colorado Springs, Monument, CO 80132
-      </a>
+        <GoogleMap
+          mapContainerStyle={mapContainerStyle}
+          center={center}
+          zoom={15}
+        >
+          <MarkerF position={center} />
+        </GoogleMap>
+        <a
+          href='https://maps.app.goo.gl/mSxxnJv4vmKMaUaU8'
+          target='_blank'
+          rel="noopener noreferrer"
+          className='mapDirectionsATag'
+          aria-label="Open Google Maps for Front Street Townhomes"
+        >
+          Front Street Townhomes<br />
+          241 Front St, Monument, CO 80132<br />
+          Colorado Springs, Monument, CO 80132
+        </a>
+      </div>
     </div>
   )
 }

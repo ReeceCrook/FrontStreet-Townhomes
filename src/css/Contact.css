@@ -1,3 +1,10 @@
+.aboutUsPage {
+  background-color: #9cc0c5;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 .about-us {
   max-width: 960px;
   margin: 0 auto;
@@ -8,6 +15,7 @@
   line-height: 1.15;
   letter-spacing: -0.02em;
   margin: 0 0 16px 0;
+  background-color: #9cc0c5;
 }
 
 .about-us-card {
@@ -17,6 +25,7 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   display: grid;
   gap: 14px;
+  background-color: white;
 }
 
 .about-us-card p {
@@ -44,6 +53,7 @@
   top: 23%;
   left: 2%;
   position: absolute;
+  background-color: white;
 }
 
 .businessCard img {
