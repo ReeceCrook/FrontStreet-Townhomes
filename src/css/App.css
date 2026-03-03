@@ -248,7 +248,7 @@ figcaption {
 }
 
 .directionsWrapper {
-  top: 22%;
+  top: 23%;
   width: 70%;
   height: auto;
   left: 50%;
@@ -414,10 +414,6 @@ figcaption {
     margin: 0;
   }
 
-  .directionsWrapper {
-    top: 14%;
-    left: 38%;
-  }
 }
 
 @media only screen and (min-width: 771px) and (max-width: 1023px) {
