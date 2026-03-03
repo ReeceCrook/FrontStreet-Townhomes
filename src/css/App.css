@@ -444,6 +444,7 @@ figcaption {
 
   .backroundImgDiv {
     background-image: none;
+    background-color: #9cc0c5;
   }
 
   .homeTabs {
@@ -539,11 +540,13 @@ figcaption {
     width: 70%;
     float: left;
     font-size: small;
-    margin-top: 80px;
+    margin: 105px 0 0 4px;
+    background-color: white;
   }
 
   .communityInfoWrapperInner {
     padding: 0%;
+    background-color: white;
   }
 
   .info-bar {
