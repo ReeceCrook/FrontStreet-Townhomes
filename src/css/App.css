@@ -248,10 +248,12 @@ figcaption {
 }
 
 .directionsWrapper {
-  margin-top: 120px;
-  display: inline-block;
+  top: 22%;
   width: 70%;
   height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
 }
 
 .mapDirectionsATag {
@@ -411,6 +413,19 @@ figcaption {
   .tabs figure{
     margin: 0;
   }
+
+  .directionsWrapper {
+    top: 14%;
+    left: 38%;
+  }
+}
+
+@media only screen and (min-width: 771px) and (max-width: 1023px) {
+  .directionsWrapper {
+    top: 25%;
+    left: 38%;
+  }
+  
 }
 
 @media only screen and (max-width: 770px) {
@@ -516,8 +531,8 @@ figcaption {
   }
 
   .directionsWrapper {
-    float: left;
-    margin-left: 5%;
+    top: 14%;
+    left: 38%;
   }
 
   .mapDirectionsATag {

@@ -1,7 +1,6 @@
 .aboutUsPage {
   background-color: #9cc0c5;
   min-height: 100vh;
-  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -11,10 +10,10 @@
 }
 
 .about-us-title {
-  font-size: xx-large;
+  font-size: 2.2em;
   line-height: 1.15;
   letter-spacing: -0.02em;
-  margin: 0 0 16px 0;
+  margin: 0 0 70px 0;
   background-color: #9cc0c5;
 }
 
