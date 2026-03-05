@@ -238,7 +238,8 @@ figcaption {
 
 .directionsPage {
   background-color: #9cc0c5;
-  min-height: 100vh;
+  height: 100vh;
+  width: auto;
   padding: 20px;
   box-sizing: border-box;
 }
