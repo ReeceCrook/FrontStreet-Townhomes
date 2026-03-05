@@ -533,6 +533,10 @@ figcaption {
     left: 38%;
   }
 
+  .directionsPage h1 {
+    margin: auto;
+  }
+
   .mapDirectionsATag {
     font-size: medium;
   }
