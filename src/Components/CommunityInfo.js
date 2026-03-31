@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import finalCovs from '../assets/hoaDocs/FrontStreetFinalCovs.pdf'
-import platMap from '../assets/mainPics/FrontStreetPlatMap.png'
+import platMap from '../assets/mainPics/FrontStreetPlatMap.webp'
 
 function CommunityInfo() {
   const [isPlatModalOpen, setIsPlatModalOpen] = useState(false)

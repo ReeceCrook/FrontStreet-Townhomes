@@ -39,7 +39,24 @@ function Contact() {
             </p>
           </div>
         </div>
-        <div className='socialsDiv'>
+        <div className="businessCardWrapper">
+          <a
+            href="https://www.bbb.org/us/co/palmer-lake/profile/building-contractors/masterbilt-homes-0785-5281152/#sealclick"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bbbRating"
+          >
+            <img src="https://seal-southerncolorado.bbb.org/seals/darkgray-seal-200-65-bbb-5281152.png" alt="Masterbilt Homes BBB Review" />
+          </a>
+
+          <aside className='businessCard'>
+            <img src={mbLogo} alt='Masterbilt-Logo' className='mbLogo businessCardLogo' />
+            <img src={jimPhoto} alt="Jim's Masterbilt Profile" />
+            <h2>James A. Stiltner</h2>
+            <a href='tel:7199643526'>719-964-3526</a> <br />
+            <a href='mailto:jim@masterbilt.com'>jim@masterbilt.com</a>
+          </aside>
+
           <a
             href='https://www.facebook.com/MasterbiltHomes'
             target='_blank'
@@ -49,22 +66,7 @@ function Contact() {
             <img src={facebookLogo} alt="Masterbilt Townhomes Facebook Logo" className="facebookLogo" />
             <span>Visit Our Facebook Page</span>
           </a>
-          <a href="https://www.bbb.org/us/co/palmer-lake/profile/building-contractors/masterbilt-homes-0785-5281152/#sealclick"
-            target="_blank"
-            rel="noreferrer"
-            className='bbbRating'
-          >
-            <img src="https://seal-southerncolorado.bbb.org/seals/darkgray-seal-200-65-bbb-5281152.png"
-              alt="Masterbilt Homes BBB Review" />
-          </a>
         </div>
-        <aside className='businessCard'>
-          <img src={mbLogo} alt='Masterbilt-Logo' className='mbLogo businessCardLogo' />
-          <img src={jimPhoto} alt="Jim's Masterbilt Profile" />
-          <h2>James A. Stiltner</h2>
-          <a href='tel:7199643526'>719-964-3526</a> <br />
-          <a href='mailto:jim@masterbilt.com'>jim@masterbilt.com</a>
-        </aside>
       </div>
     </div>
   )

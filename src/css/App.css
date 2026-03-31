@@ -168,7 +168,7 @@ figcaption {
 }
 
 .backroundImgDiv {
-  background-image: url(../assets/mainPics/NewCommunityInfoBackground.jpeg);
+  background-image: url(../assets/mainPics/NewCommunityInfoBackground.webp);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -384,14 +384,10 @@ figcaption {
   text-align: center;
 }
 
-.FPCard1 .info-bar {
+.FPCard1 .info-bar,
+.FPCard2 .info-bar {
   width: 25%;
   left: 13%;
-}
-
-.FPCard2 .info-bar,
-.FPCard3 .info-bar {
-  display: none;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1800px) {
